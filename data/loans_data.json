@@ -1,0 +1,81 @@
+{
+  "last_updated": "2026-08-25T12:41:39.851374+00:00",
+  "currency": "CZK",
+  "banks": [
+    {
+      "id": "csas",
+      "bank_name": "Česká spořitelna",
+      "product_name": "Půjčka",
+      "logo_url": "assets/csas.png",
+      "min_amount": 2000.0,
+      "max_amount": 2500000.0,
+      "min_duration_months": 6,
+      "max_duration_months": 108,
+      "interest_rate_from": 3.91,
+      "rpsn_from": 4.03,
+      "processing_fee": 0.0,
+      "monthly_fee": 0.0,
+      "web_url": "https://www.csas.cz/cs/osobni-finance/pujcky/pujcka"
+    },
+    {
+      "id": "airbank",
+      "bank_name": "Air Bank",
+      "product_name": "Osobní půjčka",
+      "logo_url": "assets/airbank.png",
+      "min_amount": 10000.0,
+      "max_amount": 1200000.0,
+      "min_duration_months": 6,
+      "max_duration_months": 96,
+      "interest_rate_from": 4.9,
+      "rpsn_from": 5.1,
+      "processing_fee": 0.0,
+      "monthly_fee": 0.0,
+      "web_url": "https://www.airbank.cz/paticky/pujcka/"
+    },
+    {
+      "id": "rb",
+      "bank_name": "Raiffeisenbank",
+      "product_name": "Minutová půjčka",
+      "logo_url": "assets/rb.png",
+      "min_amount": 20000.0,
+      "max_amount": 1500000.0,
+      "min_duration_months": 6,
+      "max_duration_months": 120,
+      "interest_rate_from": 5.7,
+      "rpsn_from": 5.9,
+      "processing_fee": 0.0,
+      "monthly_fee": 0.0,
+      "web_url": "https://www.rb.cz/osobni/pujcky/minutova-pujcka"
+    },
+    {
+      "id": "csob",
+      "bank_name": "ČSOB",
+      "product_name": "Půjčka na cokoliv",
+      "logo_url": "assets/csob.png",
+      "min_amount": 20000.0,
+      "max_amount": 1200000.0,
+      "min_duration_months": 12,
+      "max_duration_months": 96,
+      "interest_rate_from": 6.9,
+      "rpsn_from": 7.1,
+      "processing_fee": 0.0,
+      "monthly_fee": 0.0,
+      "web_url": "https://www.csob.cz/portal/lide/pujcky/pujcka-na-cokoliv"
+    },
+    {
+      "id": "kb",
+      "bank_name": "Komerční banka",
+      "product_name": "Osobní půjčka",
+      "logo_url": "assets/kb.png",
+      "min_amount": 10000.0,
+      "max_amount": 2500000.0,
+      "min_duration_months": 12,
+      "max_duration_months": 96,
+      "interest_rate_from": 6.5,
+      "rpsn_from": 6.7,
+      "processing_fee": 0.0,
+      "monthly_fee": 0.0,
+      "web_url": "https://www.kb.cz/cs/obcane/pujcky/osobni-pujcka"
+    }
+  ]
+}
