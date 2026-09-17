@@ -1,0 +1,186 @@
+:root {
+    --nw-green: #00845d;
+    --nw-green-hover: #006b4b;
+    --bg-color: #f4f7f6;
+    --text-main: #1a1f1d;
+    --text-muted: #5e6b66;
+    --card-bg: #ffffff;
+    --border-radius: 12px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0 20px 40px;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: var(--nw-green);
+    margin-bottom: 8px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    margin-bottom: 30px;
+}
+
+/* Ovládací panel */
+.control-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.label-row label {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #c9d3d0;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+.input-wrapper input {
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: right;
+    width: 100px;
+}
+
+.currency {
+    margin-left: 8px;
+    color: var(--text-muted);
+}
+
+/* Stylování posuvníku */
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: var(--nw-green);
+    cursor: pointer;
+    margin-top: -10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: #c9d3d0;
+    border-radius: 3px;
+}
+
+/* Výsledkové karty bank */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.bank-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #eef2f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.bank-card h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #eef2f0;
+    padding-bottom: 10px;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.payment-row {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.payment-row span {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.payment-row strong {
+    font-size: 2.2rem;
+    color: var(--nw-green);
+    margin-top: 4px;
+}
+
+.btn-apply {
+    background-color: var(--nw-green);
+    color: white;
+    text-align: center;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: auto;
+    transition: background-color 0.2s;
+}
+
+.btn-apply:hover {
+    background-color: var(--nw-green-hover);
+}
+
+@media (max-width: 768px) {
+    .control-panel {
+        grid-template-columns: 1fr;
+    }
+}
