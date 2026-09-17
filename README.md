@@ -11,6 +11,7 @@ Cílem aplikace návrhu a realizace prototypu webové aplikace pro automatizovan
 
 ## 📂 Struktura projektu
 
+```text
 bank-loan-comparator/
 │
 ├── backend/
