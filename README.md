@@ -34,6 +34,7 @@ bank-loan-comparator/
 ├── .gitignore             # Ignorované soubory pro Git
 ├── AGENTS.md              # Konfigurace agentů / AI dokumentace
 └── README.md              # Tato dokumentace
+```
 
 ⚙️ Architektura a Metodika
 Aplikace záměrně nevyužívá živé proxy dotazování do interních bankovních systémů (risk-based pricing) z důvodu porušování obchodních podmínek, vysoké latence a blokování ze strany WAF.
