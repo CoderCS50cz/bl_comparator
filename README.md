@@ -71,6 +71,7 @@ bank-loan-comparator/
 │   │   └── comparator.js       # Logika filtrace a řazení
 │   └── index.html              # Hlavní uživatelské rozhraní kalkulačky
 └── README.md
+```
 
 ## 🚀 Lokální spuštění a vývoj
 Pokud si chcete projekt spustit a upravovat lokálně na vlastním počítači:
@@ -87,15 +88,17 @@ pip install -r backend/requirements.txt
 
 # Ruční spuštění sběru aktuálních dat z bank
 python backend/main.py
+```
 
-
-2. Spuštění lokálního webového serveru:
+### 2. Spuštění lokálního webového serveru:
+```bash
 # Nastartování lokálního HTTP serveru
 python -m http.server 8000
+```
 
 Aplikace bude dostupná ve vašem prohlížeči na adrese: http://localhost:8000/frontend/
 
-👨‍💻 Autor a vedení práce
+## 👨‍💻 Autor a vedení práce
 Autor: Ing. Jaroslav Smirnov
 
 Vedoucí práce: Ing. Josef Pavlíček, Ph.D.
