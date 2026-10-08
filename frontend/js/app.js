@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const months = Number(monthsInput.value);
         
         try {
-            const response = await fetch(`../data/loans_data.json?nocache=${new Date().getTime()}`);
+            const response = await fetch(`./data/loans_data.json?nocache=${new Date().getTime()}`);
             const data = await response.json();
             
             resultsDiv.innerHTML = ''; 

@@ -33,7 +33,7 @@ def main():
         banks=valid_products
     )
 
-    output_path = Path(__file__).parent.parent / "data" / "loans_data.json"
+    output_path = Path(__file__).parent.parent / "frontend" / "data" / "loans_data.json"
     
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data_collection.model_dump(), f, ensure_ascii=False, indent=2)
