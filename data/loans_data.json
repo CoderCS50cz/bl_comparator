@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05T16:55:46.326220+00:00",
+  "last_updated": "2026-10-07T19:52:28.652585+00:00",
   "currency": "CZK",
   "banks": [
     {
@@ -11,7 +11,7 @@
       "max_amount": 2500000.0,
       "min_duration_months": 6,
       "max_duration_months": 108,
-      "interest_rate_from": 3.99,
+      "interest_rate_from": 4.39,
       "rpsn_from": 4.15,
       "processing_fee": 0.0,
       "monthly_fee": 0.0,
