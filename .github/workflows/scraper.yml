@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * *' # Spustí skript každý den o půlnoci
   workflow_dispatch: # Umožňuje ruční spuštění v rozhraní GitHubu
 
+permissions:
+  contents: write # Povoluje botovi ukládat změny do repozitáře
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
