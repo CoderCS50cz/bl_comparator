@@ -71,12 +71,12 @@ bank-loan-comparator/
 │   │   └── comparator.js       # Logika filtrace a řazení
 │   └── index.html              # Hlavní uživatelské rozhraní kalkulačky
 └── README.md
-```
 
-🚀 Lokální spuštění a vývoj
+## 🚀 Lokální spuštění a vývoj
 Pokud si chcete projekt spustit a upravovat lokálně na vlastním počítači:
 
-1. Spuštění backendového scraperu:
+### 1. Spuštění backendového scraperu:
+```bash
 # Vytvoření a aktivace virtuálního prostředí (volitelné)
 python -m venv venv
 # Windows: venv\Scripts\activate
@@ -87,6 +87,7 @@ pip install -r backend/requirements.txt
 
 # Ruční spuštění sběru aktuálních dat z bank
 python backend/main.py
+
 
 2. Spuštění lokálního webového serveru:
 # Nastartování lokálního HTTP serveru
