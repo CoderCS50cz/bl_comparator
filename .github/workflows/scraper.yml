@@ -2,7 +2,8 @@ name: Automatický sběr dat (Scraper)
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Spustí skript každý den o půlnoci
+    - cron: '0 0 * * 1' # Spustí skript každé pondělí o půlnoci
+    # - cron: '0 0 * * *' # Spustí skript každý den o půlnoci
   workflow_dispatch: # Umožňuje ruční spuštění v rozhraní GitHubu
 
 permissions:
