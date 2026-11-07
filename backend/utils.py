@@ -1,6 +1,13 @@
-from datetime import datetime, timezone
-from typing import List
 from pydantic import BaseModel, HttpUrl
+from typing import List, Optional
+from datetime import datetime, timezone
+
+# Nový model pre jednu položku v sadzobníku (matici)
+class RateCardItem(BaseModel):
+    amount: float
+    months: int
+    interest_rate: float
+    rpsn: float
 
 class BankLoanProduct(BaseModel):
     id: str
@@ -13,9 +20,11 @@ class BankLoanProduct(BaseModel):
     max_duration_months: int
     interest_rate_from: float
     rpsn_from: float
-    processing_fee: float = 0.0
-    monthly_fee: float = 0.0
+    processing_fee: float
+    monthly_fee: float
     web_url: str
+    # Pridanie nového voliteľného poľa pre maticový zber
+    rate_card: Optional[List[RateCardItem]] = None
 
 class LoanDataCollection(BaseModel):
     last_updated: str

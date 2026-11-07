@@ -14,28 +14,29 @@
     </header>
 
     <main class="container">
-        <!-- Ovládací panel s posuvníky ve stylu NerdWallet -->
+        <!-- Ovládací panel -->
         <section class="control-panel card">
             <div class="input-group">
                 <div class="label-row">
                     <label for="amount">Výše úvěru</label>
                     <div class="input-wrapper">
-                        <input type="number" id="amount" value="150000" min="5000" max="2500000" step="5000">
+                        <input type="number" id="amount" value="150000" min="20000" max="2500000">
                         <span class="currency">Kč</span>
                     </div>
                 </div>
-                <input type="range" id="amount-slider" value="150000" min="5000" max="2500000" step="5000">
+                <!-- Krok je zde záměrně 10000, ale náš JS ho přepíše na specifické kroky 20k, 50k, 100k... -->
+                <input type="range" id="amount-slider" value="150000" min="20000" max="2500000" step="10000">
             </div>
 
             <div class="input-group">
                 <div class="label-row">
                     <label for="months">Doba splácení</label>
                     <div class="input-wrapper">
-                        <input type="number" id="months" value="48" min="6" max="120" step="6">
+                        <input type="number" id="months" value="48" min="6" max="120" step="3">
                         <span class="currency">měsíců</span>
                     </div>
                 </div>
-                <input type="range" id="months-slider" value="48" min="6" max="120" step="6">
+                <input type="range" id="months-slider" value="48" min="6" max="120" step="3">
             </div>
         </section>
 

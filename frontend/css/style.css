@@ -1,186 +1,186 @@
-:root {
-    --nw-green: #00845d;
-    --nw-green-hover: #006b4b;
-    --bg-color: #f4f7f6;
-    --text-main: #1a1f1d;
-    --text-muted: #5e6b66;
-    --card-bg: #ffffff;
-    --border-radius: 12px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-main);
-    margin: 0;
-    padding: 0 20px 40px;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
 }
 
 .header {
     text-align: center;
-    padding: 40px 0 20px;
+    padding: 3rem 1rem 2rem;
 }
 
 .header h1 {
+    color: #008a55; /* Přesná zelená ze screenshotu */
     font-size: 2.5rem;
-    color: var(--nw-green);
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    color: #555;
+    font-size: 1.1rem;
 }
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 1rem 3rem;
 }
 
 .card {
-    background: var(--card-bg);
-    border-radius: var(--border-radius);
-    padding: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 2rem;
 }
 
-/* Ovládací panel */
+/* Ovládací panel nahoře */
 .control-panel {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 3rem;
+    margin-bottom: 2rem;
 }
 
-.input-group {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 768px) {
+    .control-panel { grid-template-columns: 1fr; gap: 2rem; }
 }
 
 .label-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
 }
 
 .label-row label {
     font-weight: 600;
-    color: var(--text-main);
+    font-size: 1.1rem;
 }
 
 .input-wrapper {
     display: flex;
     align-items: center;
-    background: #fff;
-    border: 1px solid #c9d3d0;
+    border: 1px solid #ccc;
     border-radius: 6px;
-    padding: 6px 12px;
+    padding: 0.3rem 0.8rem;
 }
 
 .input-wrapper input {
     border: none;
     outline: none;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
+    width: 90px;
     text-align: right;
-    width: 100px;
 }
 
-.currency {
-    margin-left: 8px;
-    color: var(--text-muted);
+.input-wrapper .currency {
+    color: #666;
+    margin-left: 0.5rem;
 }
 
-/* Stylování posuvníku */
-input[type=range] {
+/* Úprava posuvníků (Sliders) */
+input[type="range"] {
     -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    background: transparent;
-}
-
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    height: 24px;
-    width: 24px;
-    border-radius: 50%;
-    background: var(--nw-green);
-    cursor: pointer;
-    margin-top: -10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 6px;
-    cursor: pointer;
-    background: #c9d3d0;
-    border-radius: 3px;
+    background: #d3d3d3;
+    border-radius: 5px;
+    outline: none;
 }
 
-/* Výsledkové karty bank */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #008a55;
+    cursor: pointer;
+}
+
+/* Grid s bankami (3 sloupce na počítači) */
 .results-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
 .bank-card {
-    background: var(--card-bg);
-    border-radius: var(--border-radius);
-    padding: 24px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    border: 1px solid #eef2f0;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
 }
 
-.bank-card h3 {
-    margin: 0 0 15px 0;
-    font-size: 1.2rem;
-    border-bottom: 1px solid #eef2f0;
-    padding-bottom: 10px;
+.bank-header {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
-.result-row {
+.bank-header h3 {
+    font-size: 1.25rem;
+    color: #111;
+}
+
+.detail-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 12px;
+    margin-bottom: 0.5rem;
     font-size: 0.95rem;
+    color: #555;
 }
 
-.payment-row {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
+.detail-row strong {
+    color: #111;
 }
 
-.payment-row span {
-    font-size: 0.9rem;
-    color: var(--text-muted);
+.payment-highlight {
+    margin: 1.5rem 0;
 }
 
-.payment-row strong {
+.payment-label {
+    font-size: 0.85rem;
+    color: #777;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.payment-amount {
     font-size: 2.2rem;
-    color: var(--nw-green);
-    margin-top: 4px;
+    font-weight: 700;
+    color: #008a55;
 }
 
-.btn-apply {
-    background-color: var(--nw-green);
-    color: white;
+.total-amount-row {
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
     text-align: center;
-    padding: 14px;
+    background-color: #008a55;
+    color: white;
+    padding: 0.8rem;
     border-radius: 8px;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: auto;
     transition: background-color 0.2s;
 }
 
-.btn-apply:hover {
-    background-color: var(--nw-green-hover);
-}
-
-@media (max-width: 768px) {
-    .control-panel {
-        grid-template-columns: 1fr;
-    }
+.btn-primary:hover {
+    background-color: #006b42;
 }

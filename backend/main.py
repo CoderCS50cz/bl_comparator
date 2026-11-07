@@ -9,14 +9,19 @@ from scrapers.kb_scraper import fetch_kb_loan_data
 from utils import BankLoanProduct, LoanDataCollection, get_utc_now_iso
 
 def main():
-    print("Spouštím automatizovaný sběr dat o úvěrech...")
+    print("Spouštím automatizovaný sběr dat o úvěrech (POUZE RB pro testování)...")
     
     raw_products = [
-        fetch_csas_loan_data(),
+        # --- AKTIVNÍ SCRAPER ---
         fetch_airbank_loan_data(),
+        fetch_csas_loan_data(),
         fetch_rb_loan_data(),
         fetch_csob_loan_data(),
         fetch_kb_loan_data()
+        
+                
+        # --- DOČASNĚ VYPNOUTO PRO TESTOVÁNÍ ---
+        # 
     ]
     
     valid_products = []

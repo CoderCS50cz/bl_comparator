@@ -25,14 +25,14 @@ Aplikace řeší problém uzavřenosti bankovních API v oblasti spotřebitelsk�
 Projekt využívá kompozitní architekturu typu **Jamstack** s odděleným backendem a frontendem. Celý systém běží automatizovaně s nulovými provozními náklady:
 
 1. **Backend (Python 3.11):**
-   * Automatické stahování HTML stránek bank (`requests` s imitací hlaviček `User-Agent`).
-   * Extrakce úrokových sazeb z DOM struktury (regulární výrazy a `BeautifulSoup`).
+   * Plnohodnotná UI automatizace pomocí headless prohlížečů (knihovna `Playwright`).
+   * Využití optimalizační metody **Data Pattern Recognition** pro krokování posuvníků, minimalizaci síťových dotazů a obejití bezpečnostních ochran (WAF).
    * Striktní typová kontrola a validace dat pomocí knihovny `Pydantic`.
-   * Bezpečnostní fallback mechanismus pro případ výpadku webu banky nebo blokace (WAF).
+   * Bezpečnostní fallback mechanismus pro případ výpadku webu banky.
    * Generování výstupního datového JSON souboru (`frontend/data/loans_data.json`).
 
 2. **CI/CD Automatizace (GitHub Actions):**
-   * Plně bezobslužný chod. Konfigurační workflow (`.github/workflows/scraper.yml`) nastartuje izolovaný virtuální server (Ubuntu) každý den o půlnoci (Cron).
+   * Plně bezobslužný chod. Konfigurační workflow (`.github/workflows/scraper.yml`) nastartuje izolovaný virtuální server (Ubuntu) každé pondělí o půlnoci (Cron).
    * Spustí Python skript, detekuje změny úrokových sazeb a pokud se trh změnil, robot (GitHub Action Bot) aplikuje automatický commit a push do hlavní větvě repozitáře.
 
 3. **Frontend & Deployment (Netlify):**
@@ -83,8 +83,9 @@ python -m venv venv
 # Windows: venv\Scripts\activate
 # Mac/Linux: source venv/bin/activate
 
-# Instalace požadovaných závislostí
+# Instalace požadovaných závislostí a prohlížeče
 pip install -r backend/requirements.txt
+playwright install chromium
 
 # Ruční spuštění sběru aktuálních dat z bank
 python backend/main.py
@@ -92,14 +93,14 @@ python backend/main.py
 
 ### 2. Spuštění lokálního webového serveru:
 ```bash
-# Nastartování lokálního HTTP serveru
+# Nastartování lokálního HTTP serveru (spusťte z kořenové složky repozitáře)
 python -m http.server 8000
 ```
 
 Aplikace bude dostupná ve vašem prohlížeči na adrese: http://localhost:8000/frontend/
 
 ## 👨‍💻 Autor a vedení práce
-Autor: Ing. Jaroslav Smirnov
+Autor: Ing. Iaroslav Smirnov
 
 Vedoucí práce: Ing. Josef Pavlíček, Ph.D.
 
