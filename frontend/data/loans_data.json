@@ -1,7 +1,108 @@
 {
-  "last_updated": "2026-11-02T02:57:32.609188+00:00",
+  "last_updated": "2026-11-09T20:24:48.391946+00:00",
   "currency": "CZK",
   "banks": [
+    {
+      "id": "airbank",
+      "bank_name": "Air Bank",
+      "product_name": "Půjčka",
+      "logo_url": "assets/airbank.png",
+      "min_amount": 20000.0,
+      "max_amount": 2000000.0,
+      "min_duration_months": 6,
+      "max_duration_months": 110,
+      "interest_rate_from": 4.4,
+      "rpsn_from": 4.49,
+      "processing_fee": 0.0,
+      "monthly_fee": 0.0,
+      "web_url": "https://www.airbank.cz/produkty/pujcka/",
+      "rate_card": [
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 4.4,
+          "rpsn": 4.49
+        },
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 5.4,
+          "rpsn": 5.54
+        },
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 6.4,
+          "rpsn": 6.6
+        },
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 7.4,
+          "rpsn": 7.66
+        },
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 8.4,
+          "rpsn": 8.74
+        },
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 9.4,
+          "rpsn": 9.82
+        },
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 10.4,
+          "rpsn": 10.92
+        },
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 11.4,
+          "rpsn": 12.02
+        },
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 12.4,
+          "rpsn": 13.14
+        },
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 13.4,
+          "rpsn": 14.27
+        },
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 14.4,
+          "rpsn": 15.4
+        },
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 15.4,
+          "rpsn": 16.55
+        },
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 16.4,
+          "rpsn": 17.7
+        },
+        {
+          "amount": 0.0,
+          "months": 0,
+          "interest_rate": 16.9,
+          "rpsn": 18.29
+        }
+      ]
+    },
     {
       "id": "csas",
       "bank_name": "Česká spořitelna",
@@ -10,27 +111,308 @@
       "min_amount": 2000.0,
       "max_amount": 2500000.0,
       "min_duration_months": 6,
-      "max_duration_months": 108,
-      "interest_rate_from": 4.39,
-      "rpsn_from": 4.15,
-      "processing_fee": 0.0,
-      "monthly_fee": 0.0,
-      "web_url": "https://www.csas.cz/cs/osobni-finance/pujcky/pujcka"
-    },
-    {
-      "id": "airbank",
-      "bank_name": "Air Bank",
-      "product_name": "Půjčka",
-      "logo_url": "assets/airbank.png",
-      "min_amount": 5000.0,
-      "max_amount": 2000000.0,
-      "min_duration_months": 6,
       "max_duration_months": 120,
-      "interest_rate_from": 4.4,
-      "rpsn_from": 4.49,
+      "interest_rate_from": 4.38,
+      "rpsn_from": 4.53,
       "processing_fee": 0.0,
       "monthly_fee": 0.0,
-      "web_url": "https://www.airbank.cz/produkty/pujcka/"
+      "web_url": "https://www.csas.cz/cs/osobni-finance/pujcky/pujcka",
+      "rate_card": [
+        {
+          "amount": 20000.0,
+          "months": 6,
+          "interest_rate": 7.0,
+          "rpsn": 7.34
+        },
+        {
+          "amount": 20000.0,
+          "months": 48,
+          "interest_rate": 6.13,
+          "rpsn": 6.38
+        },
+        {
+          "amount": 20000.0,
+          "months": 60,
+          "interest_rate": 5.25,
+          "rpsn": 5.45
+        },
+        {
+          "amount": 20000.0,
+          "months": 72,
+          "interest_rate": 5.42,
+          "rpsn": 5.64
+        },
+        {
+          "amount": 20000.0,
+          "months": 84,
+          "interest_rate": 5.25,
+          "rpsn": 5.48
+        },
+        {
+          "amount": 20000.0,
+          "months": 96,
+          "interest_rate": 5.15,
+          "rpsn": 5.37
+        },
+        {
+          "amount": 50000.0,
+          "months": 6,
+          "interest_rate": 7.0,
+          "rpsn": 7.33
+        },
+        {
+          "amount": 50000.0,
+          "months": 48,
+          "interest_rate": 6.13,
+          "rpsn": 6.38
+        },
+        {
+          "amount": 50000.0,
+          "months": 60,
+          "interest_rate": 5.23,
+          "rpsn": 5.43
+        },
+        {
+          "amount": 50000.0,
+          "months": 72,
+          "interest_rate": 5.36,
+          "rpsn": 5.59
+        },
+        {
+          "amount": 50000.0,
+          "months": 84,
+          "interest_rate": 5.2,
+          "rpsn": 5.41
+        },
+        {
+          "amount": 50000.0,
+          "months": 96,
+          "interest_rate": 5.15,
+          "rpsn": 5.34
+        },
+        {
+          "amount": 100000.0,
+          "months": 6,
+          "interest_rate": 6.27,
+          "rpsn": 6.55
+        },
+        {
+          "amount": 100000.0,
+          "months": 48,
+          "interest_rate": 5.37,
+          "rpsn": 5.57
+        },
+        {
+          "amount": 100000.0,
+          "months": 60,
+          "interest_rate": 4.46,
+          "rpsn": 4.62
+        },
+        {
+          "amount": 100000.0,
+          "months": 72,
+          "interest_rate": 4.61,
+          "rpsn": 4.77
+        },
+        {
+          "amount": 100000.0,
+          "months": 84,
+          "interest_rate": 4.41,
+          "rpsn": 4.58
+        },
+        {
+          "amount": 100000.0,
+          "months": 96,
+          "interest_rate": 4.39,
+          "rpsn": 4.54
+        },
+        {
+          "amount": 200000.0,
+          "months": 6,
+          "interest_rate": 6.27,
+          "rpsn": 6.54
+        },
+        {
+          "amount": 200000.0,
+          "months": 48,
+          "interest_rate": 5.36,
+          "rpsn": 5.57
+        },
+        {
+          "amount": 200000.0,
+          "months": 60,
+          "interest_rate": 4.46,
+          "rpsn": 4.61
+        },
+        {
+          "amount": 200000.0,
+          "months": 72,
+          "interest_rate": 4.6,
+          "rpsn": 4.76
+        },
+        {
+          "amount": 200000.0,
+          "months": 84,
+          "interest_rate": 4.43,
+          "rpsn": 4.58
+        },
+        {
+          "amount": 200000.0,
+          "months": 96,
+          "interest_rate": 4.39,
+          "rpsn": 4.54
+        },
+        {
+          "amount": 200000.0,
+          "months": 108,
+          "interest_rate": 4.41,
+          "rpsn": 4.57
+        },
+        {
+          "amount": 500000.0,
+          "months": 6,
+          "interest_rate": 6.27,
+          "rpsn": 6.55
+        },
+        {
+          "amount": 500000.0,
+          "months": 48,
+          "interest_rate": 5.35,
+          "rpsn": 5.56
+        },
+        {
+          "amount": 500000.0,
+          "months": 60,
+          "interest_rate": 4.45,
+          "rpsn": 4.61
+        },
+        {
+          "amount": 500000.0,
+          "months": 72,
+          "interest_rate": 4.6,
+          "rpsn": 4.76
+        },
+        {
+          "amount": 500000.0,
+          "months": 84,
+          "interest_rate": 4.41,
+          "rpsn": 4.57
+        },
+        {
+          "amount": 500000.0,
+          "months": 96,
+          "interest_rate": 4.38,
+          "rpsn": 4.53
+        },
+        {
+          "amount": 500000.0,
+          "months": 108,
+          "interest_rate": 4.41,
+          "rpsn": 4.57
+        },
+        {
+          "amount": 500000.0,
+          "months": 120,
+          "interest_rate": 4.48,
+          "rpsn": 4.64
+        },
+        {
+          "amount": 1000000.0,
+          "months": 6,
+          "interest_rate": 6.27,
+          "rpsn": 6.55
+        },
+        {
+          "amount": 1000000.0,
+          "months": 48,
+          "interest_rate": 5.35,
+          "rpsn": 5.56
+        },
+        {
+          "amount": 1000000.0,
+          "months": 60,
+          "interest_rate": 4.45,
+          "rpsn": 4.6
+        },
+        {
+          "amount": 1000000.0,
+          "months": 72,
+          "interest_rate": 4.6,
+          "rpsn": 4.76
+        },
+        {
+          "amount": 1000000.0,
+          "months": 84,
+          "interest_rate": 4.42,
+          "rpsn": 4.57
+        },
+        {
+          "amount": 1000000.0,
+          "months": 96,
+          "interest_rate": 4.38,
+          "rpsn": 4.53
+        },
+        {
+          "amount": 1000000.0,
+          "months": 108,
+          "interest_rate": 4.41,
+          "rpsn": 4.56
+        },
+        {
+          "amount": 1000000.0,
+          "months": 120,
+          "interest_rate": 4.48,
+          "rpsn": 4.64
+        },
+        {
+          "amount": 2500000.0,
+          "months": 6,
+          "interest_rate": 6.27,
+          "rpsn": 6.55
+        },
+        {
+          "amount": 2500000.0,
+          "months": 48,
+          "interest_rate": 5.35,
+          "rpsn": 5.56
+        },
+        {
+          "amount": 2500000.0,
+          "months": 60,
+          "interest_rate": 4.45,
+          "rpsn": 4.6
+        },
+        {
+          "amount": 2500000.0,
+          "months": 72,
+          "interest_rate": 4.6,
+          "rpsn": 4.76
+        },
+        {
+          "amount": 2500000.0,
+          "months": 84,
+          "interest_rate": 4.41,
+          "rpsn": 4.57
+        },
+        {
+          "amount": 2500000.0,
+          "months": 96,
+          "interest_rate": 4.38,
+          "rpsn": 4.53
+        },
+        {
+          "amount": 2500000.0,
+          "months": 108,
+          "interest_rate": 4.41,
+          "rpsn": 4.56
+        },
+        {
+          "amount": 2500000.0,
+          "months": 120,
+          "interest_rate": 4.48,
+          "rpsn": 4.64
+        }
+      ]
     },
     {
       "id": "rb",
@@ -45,7 +427,99 @@
       "rpsn_from": 5.02,
       "processing_fee": 0.0,
       "monthly_fee": 0.0,
-      "web_url": "https://www.rb.cz/osobni/pujcky/minutova-pujcka"
+      "web_url": "https://www.rb.cz/osobni/pujcky/minutova-pujcka",
+      "rate_card": [
+        {
+          "amount": 20000.0,
+          "months": 24,
+          "interest_rate": 11.9,
+          "rpsn": 12.58
+        },
+        {
+          "amount": 20000.0,
+          "months": 72,
+          "interest_rate": 11.9,
+          "rpsn": 12.58
+        },
+        {
+          "amount": 20000.0,
+          "months": 120,
+          "interest_rate": 11.9,
+          "rpsn": 12.58
+        },
+        {
+          "amount": 50000.0,
+          "months": 24,
+          "interest_rate": 8.9,
+          "rpsn": 9.28
+        },
+        {
+          "amount": 50000.0,
+          "months": 72,
+          "interest_rate": 8.9,
+          "rpsn": 9.28
+        },
+        {
+          "amount": 50000.0,
+          "months": 120,
+          "interest_rate": 8.9,
+          "rpsn": 9.28
+        },
+        {
+          "amount": 100000.0,
+          "months": 24,
+          "interest_rate": 6.9,
+          "rpsn": 7.13
+        },
+        {
+          "amount": 100000.0,
+          "months": 72,
+          "interest_rate": 6.9,
+          "rpsn": 7.13
+        },
+        {
+          "amount": 100000.0,
+          "months": 120,
+          "interest_rate": 6.9,
+          "rpsn": 7.13
+        },
+        {
+          "amount": 200000.0,
+          "months": 24,
+          "interest_rate": 4.9,
+          "rpsn": 5.02
+        },
+        {
+          "amount": 200000.0,
+          "months": 72,
+          "interest_rate": 4.9,
+          "rpsn": 5.02
+        },
+        {
+          "amount": 200000.0,
+          "months": 120,
+          "interest_rate": 4.9,
+          "rpsn": 5.02
+        },
+        {
+          "amount": 2000000.0,
+          "months": 24,
+          "interest_rate": 4.9,
+          "rpsn": 5.02
+        },
+        {
+          "amount": 2000000.0,
+          "months": 72,
+          "interest_rate": 4.9,
+          "rpsn": 5.02
+        },
+        {
+          "amount": 2000000.0,
+          "months": 120,
+          "interest_rate": 4.9,
+          "rpsn": 5.02
+        }
+      ]
     },
     {
       "id": "csob",
@@ -56,11 +530,85 @@
       "max_amount": 2500000.0,
       "min_duration_months": 12,
       "max_duration_months": 120,
-      "interest_rate_from": 6.9,
-      "rpsn_from": 7.12,
+      "interest_rate_from": 4.99,
+      "rpsn_from": 5.11,
       "processing_fee": 0.0,
       "monthly_fee": 0.0,
-      "web_url": "https://www.csob.cz/portal/lide/pujcky/pujcka-na-cokoliv"
+      "web_url": "https://www.csob.cz/lide/pujcky/pujcka-na-cokoliv",
+      "rate_card": [
+        {
+          "amount": 20000.0,
+          "months": 24,
+          "interest_rate": 9.9,
+          "rpsn": 10.36
+        },
+        {
+          "amount": 20000.0,
+          "months": 60,
+          "interest_rate": 9.9,
+          "rpsn": 10.37
+        },
+        {
+          "amount": 60000.0,
+          "months": 24,
+          "interest_rate": 9.9,
+          "rpsn": 10.36
+        },
+        {
+          "amount": 60000.0,
+          "months": 60,
+          "interest_rate": 9.9,
+          "rpsn": 10.37
+        },
+        {
+          "amount": 100000.0,
+          "months": 24,
+          "interest_rate": 6.9,
+          "rpsn": 7.13
+        },
+        {
+          "amount": 100000.0,
+          "months": 60,
+          "interest_rate": 6.9,
+          "rpsn": 7.11
+        },
+        {
+          "amount": 500000.0,
+          "months": 24,
+          "interest_rate": 5.9,
+          "rpsn": 6.06
+        },
+        {
+          "amount": 500000.0,
+          "months": 60,
+          "interest_rate": 5.9,
+          "rpsn": 6.06
+        },
+        {
+          "amount": 1000000.0,
+          "months": 24,
+          "interest_rate": 4.99,
+          "rpsn": 5.11
+        },
+        {
+          "amount": 1000000.0,
+          "months": 60,
+          "interest_rate": 4.99,
+          "rpsn": 5.11
+        },
+        {
+          "amount": 2500000.0,
+          "months": 24,
+          "interest_rate": 4.99,
+          "rpsn": 5.11
+        },
+        {
+          "amount": 2500000.0,
+          "months": 60,
+          "interest_rate": 4.99,
+          "rpsn": 5.11
+        }
+      ]
     },
     {
       "id": "kb",
@@ -71,11 +619,139 @@
       "max_amount": 2500000.0,
       "min_duration_months": 12,
       "max_duration_months": 96,
-      "interest_rate_from": 4.99,
-      "rpsn_from": 5.13,
+      "interest_rate_from": 5.19,
+      "rpsn_from": 5.32,
       "processing_fee": 0.0,
       "monthly_fee": 0.0,
-      "web_url": "https://www.kb.cz/cs/obcane/pujcky/osobni-pujcka"
+      "web_url": "https://www.kb.cz/cs/obcane/pujcky/osobni-pujcka",
+      "rate_card": [
+        {
+          "amount": 20000.0,
+          "months": 12,
+          "interest_rate": 13.0,
+          "rpsn": 13.87
+        },
+        {
+          "amount": 20000.0,
+          "months": 60,
+          "interest_rate": 13.0,
+          "rpsn": 13.81
+        },
+        {
+          "amount": 20000.0,
+          "months": 96,
+          "interest_rate": 13.0,
+          "rpsn": 13.81
+        },
+        {
+          "amount": 50000.0,
+          "months": 12,
+          "interest_rate": 10.59,
+          "rpsn": 11.18
+        },
+        {
+          "amount": 50000.0,
+          "months": 60,
+          "interest_rate": 10.59,
+          "rpsn": 11.13
+        },
+        {
+          "amount": 50000.0,
+          "months": 96,
+          "interest_rate": 10.59,
+          "rpsn": 11.13
+        },
+        {
+          "amount": 100000.0,
+          "months": 12,
+          "interest_rate": 8.59,
+          "rpsn": 8.98
+        },
+        {
+          "amount": 100000.0,
+          "months": 60,
+          "interest_rate": 8.59,
+          "rpsn": 8.94
+        },
+        {
+          "amount": 100000.0,
+          "months": 96,
+          "interest_rate": 8.59,
+          "rpsn": 8.94
+        },
+        {
+          "amount": 250000.0,
+          "months": 12,
+          "interest_rate": 7.49,
+          "rpsn": 7.79
+        },
+        {
+          "amount": 250000.0,
+          "months": 60,
+          "interest_rate": 7.49,
+          "rpsn": 7.76
+        },
+        {
+          "amount": 250000.0,
+          "months": 96,
+          "interest_rate": 7.49,
+          "rpsn": 7.76
+        },
+        {
+          "amount": 400000.0,
+          "months": 12,
+          "interest_rate": 5.79,
+          "rpsn": 5.97
+        },
+        {
+          "amount": 400000.0,
+          "months": 60,
+          "interest_rate": 5.79,
+          "rpsn": 5.95
+        },
+        {
+          "amount": 400000.0,
+          "months": 96,
+          "interest_rate": 5.79,
+          "rpsn": 5.95
+        },
+        {
+          "amount": 1000000.0,
+          "months": 12,
+          "interest_rate": 5.19,
+          "rpsn": 5.34
+        },
+        {
+          "amount": 1000000.0,
+          "months": 60,
+          "interest_rate": 5.19,
+          "rpsn": 5.32
+        },
+        {
+          "amount": 1000000.0,
+          "months": 96,
+          "interest_rate": 5.19,
+          "rpsn": 5.32
+        },
+        {
+          "amount": 2500000.0,
+          "months": 12,
+          "interest_rate": 5.19,
+          "rpsn": 5.34
+        },
+        {
+          "amount": 2500000.0,
+          "months": 60,
+          "interest_rate": 5.19,
+          "rpsn": 5.32
+        },
+        {
+          "amount": 2500000.0,
+          "months": 96,
+          "interest_rate": 5.19,
+          "rpsn": 5.32
+        }
+      ]
     }
   ]
 }
