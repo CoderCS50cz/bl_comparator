@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-09T20:24:48.391946+00:00",
+  "last_updated": "2026-11-16T03:32:24.644397+00:00",
   "currency": "CZK",
   "banks": [
     {
@@ -629,7 +629,7 @@
           "amount": 20000.0,
           "months": 12,
           "interest_rate": 13.0,
-          "rpsn": 13.87
+          "rpsn": 13.85
         },
         {
           "amount": 20000.0,
@@ -647,25 +647,25 @@
           "amount": 50000.0,
           "months": 12,
           "interest_rate": 10.59,
-          "rpsn": 11.18
+          "rpsn": 11.16
         },
         {
           "amount": 50000.0,
           "months": 60,
           "interest_rate": 10.59,
-          "rpsn": 11.13
+          "rpsn": 11.12
         },
         {
           "amount": 50000.0,
           "months": 96,
           "interest_rate": 10.59,
-          "rpsn": 11.13
+          "rpsn": 11.12
         },
         {
           "amount": 100000.0,
           "months": 12,
           "interest_rate": 8.59,
-          "rpsn": 8.98
+          "rpsn": 8.96
         },
         {
           "amount": 100000.0,
@@ -683,25 +683,25 @@
           "amount": 250000.0,
           "months": 12,
           "interest_rate": 7.49,
-          "rpsn": 7.79
+          "rpsn": 7.78
         },
         {
           "amount": 250000.0,
           "months": 60,
           "interest_rate": 7.49,
-          "rpsn": 7.76
+          "rpsn": 7.75
         },
         {
           "amount": 250000.0,
           "months": 96,
           "interest_rate": 7.49,
-          "rpsn": 7.76
+          "rpsn": 7.75
         },
         {
           "amount": 400000.0,
           "months": 12,
           "interest_rate": 5.79,
-          "rpsn": 5.97
+          "rpsn": 5.96
         },
         {
           "amount": 400000.0,
@@ -719,7 +719,7 @@
           "amount": 1000000.0,
           "months": 12,
           "interest_rate": 5.19,
-          "rpsn": 5.34
+          "rpsn": 5.33
         },
         {
           "amount": 1000000.0,
@@ -737,7 +737,7 @@
           "amount": 2500000.0,
           "months": 12,
           "interest_rate": 5.19,
-          "rpsn": 5.34
+          "rpsn": 5.33
         },
         {
           "amount": 2500000.0,
