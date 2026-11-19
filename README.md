@@ -100,7 +100,7 @@ python -m http.server 8000
 Aplikace bude dostupná ve vašem prohlížeči na adrese: http://localhost:8000/frontend/
 
 ## 👨‍💻 Autor a vedení práce
-Autor: Ing. Iaroslav Smirnov
+Autor: Iaroslav Smirnov
 
 Vedoucí práce: Ing. Josef Pavlíček, Ph.D.
 

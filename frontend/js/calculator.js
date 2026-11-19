@@ -1,3 +1,4 @@
+// Exaktní výpočet anuitní splátky (složené úročení)
 function calculateAnnuity(principal, annualRate, months) {
     if (annualRate === 0) return principal / months;
     
@@ -48,9 +49,11 @@ function updateBankCardsUI(selectedAmount, selectedMonths, banksData) {
             selectedMonths < bank.min_duration_months || 
             selectedMonths > bank.max_duration_months) {
             
+            // Skrytí HTML karty, pokud banka daný úvěr neposkytuje
             bankCard.style.display = 'none'; 
             return; 
         } else {
+            // Zobrazení karty (např. při změně parametrů zpět do povoleného limitu)
             bankCard.style.display = 'flex'; 
         }
 
@@ -81,10 +84,11 @@ function updateBankCardsUI(selectedAmount, selectedMonths, banksData) {
             if (rateElement) rateElement.textContent = currentInterestRate.toFixed(2);
         }
 
+        // Volání výpočtu a zjištění celkové zaplacené částky
         const monthlyPayment = calculateAnnuity(selectedAmount, currentInterestRate, selectedMonths);
         const totalPayment = monthlyPayment * selectedMonths;
 
-        // Přepis RPSN, měsíční splátky a celkové splátky
+        // Aktualizace HTML karty o RPSN, přesnou měsíční splátku a celkovou částku
         const rpsnElement = bankCard.querySelector('.rpsn-value');
         if (rpsnElement) rpsnElement.textContent = currentRpsn.toFixed(2);
 

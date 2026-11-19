@@ -35,9 +35,15 @@ function renderBanks(data) {
 
         // SPECIFICKÁ ÚPRAVA PRO AIR BANK - Rozbalovací seznam přímo v detail-row
         if (bank.id === 'airbank' && bank.rate_card && bank.rate_card.length > 0) {
+
+            // Extrakce unikátních sazeb z json matice a jejich seřazení
             const uniqueRates = [...new Set(bank.rate_card.map(r => r.interest_rate))].sort((a,b) => a-b);
+
+            // Dynamické vytvoření HTML volitelných možností (options)
             let options = uniqueRates.map(rate => `<option value="${rate}">${rate} %</option>`).join('');
             
+            // Nahrazení standardního zobrazení interaktivním <select> prvkem
+            // Událost onchange="triggerUpdate()" zajistí okamžitý asynchronní přepočet splátky
             rateRowHTML = `
                 <div class="detail-row" style="align-items: center;">
                     <span>Zvolená úroková sazba</span>
@@ -163,6 +169,7 @@ function triggerUpdate() {
     const amount = parseInt(amountInput.value) || 20000;
     const months = parseInt(monthsInput.value) || 48;
     
+    // Validace existence dat a volání překreslovací funkce přímo v prohlížeči
     if (banksData.length > 0 && typeof updateBankCardsUI === "function") {
         updateBankCardsUI(amount, months, banksData);
     }

@@ -1,14 +1,15 @@
-from pydantic import BaseModel, HttpUrl
+from pydantic import BaseModel
 from typing import List, Optional
 from datetime import datetime, timezone
 
-# Nový model pre jednu položku v sadzobníku (matici)
+# Model pro jednu položku v úrokové matici (testovací scénář)
 class RateCardItem(BaseModel):
     amount: float
     months: int
     interest_rate: float
     rpsn: float
 
+# Hlavní model definující datovou strukturu bankovního produktu
 class BankLoanProduct(BaseModel):
     id: str
     bank_name: str
@@ -23,7 +24,7 @@ class BankLoanProduct(BaseModel):
     processing_fee: float
     monthly_fee: float
     web_url: str
-    # Pridanie nového voliteľného poľa pre maticový zber
+    # Napojení na úrokovou matici pomocí striktní validace přes seznam
     rate_card: Optional[List[RateCardItem]] = None
 
 class LoanDataCollection(BaseModel):

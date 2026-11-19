@@ -81,7 +81,7 @@ def fetch_csob_loan_data() -> dict:
                     page.keyboard.press("Tab") 
                     time.sleep(0.3)
 
-                    # 2. Vyplnění Měsíců (ČSOB políčko sice píše "Roky", ale interně chce roky)
+                    # 2. Vyplnění Měsíců (ČSOB políčko interně chce roky)
                     roky_input.click(timeout=5000)
                     page.keyboard.press("Control+A")
                     page.keyboard.press("Backspace")
