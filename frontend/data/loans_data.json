@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16T03:32:24.644397+00:00",
+  "last_updated": "2026-11-23T04:25:12.372235+00:00",
   "currency": "CZK",
   "banks": [
     {
@@ -629,7 +629,7 @@
           "amount": 20000.0,
           "months": 12,
           "interest_rate": 13.0,
-          "rpsn": 13.85
+          "rpsn": 13.84
         },
         {
           "amount": 20000.0,
@@ -647,7 +647,7 @@
           "amount": 50000.0,
           "months": 12,
           "interest_rate": 10.59,
-          "rpsn": 11.16
+          "rpsn": 11.15
         },
         {
           "amount": 50000.0,
@@ -683,7 +683,7 @@
           "amount": 250000.0,
           "months": 12,
           "interest_rate": 7.49,
-          "rpsn": 7.78
+          "rpsn": 7.77
         },
         {
           "amount": 250000.0,
